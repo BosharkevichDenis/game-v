@@ -1,66 +1,26 @@
-function onPageLoaded() {
-  let input = document.querySelector("input[type='text']");
-  let ul = document.querySelector("ul.todos");
- 
-  function createToDo() {
-    let li = document.createElement("li");
-    let i = document.createElement("i");
-    let newSpan = document.createElement("span");
-    let secondSpan = document.createElement("span");
-    newSpan.setAttribute("class", "todo-text");
-    secondSpan.setAttribute("class", "todo-trash");
-    i.setAttribute("class", "fas fa-trash-alt");
-    ul.prepend(li);
-    li.prepend(newSpan); 
-    newSpan.innerHTML = input.value;
-    li.append(secondSpan); 
-    secondSpan.append(i); 
-    DeleteTodo(secondSpan);
-    getStrike(li);
-  };
-
-  let buttonSave = buttons.querySelector(".save"); 
-  buttonSave.addEventListener("click", createToDo);
-
-  input.addEventListener('keydown', function(event) {
-    if (event.code == 'Enter') {
-      createToDo();
-    }
-  });
-
-  function deleteAllTodo() {     
-    let li =  document.querySelector("li");
-    li.parentElement.remove(li);
-    // li.parentNode.removeChild(li);  -  удаление по одному
-  };
-  
-  let buttonDelete = buttons.querySelector(".clear");  
-  buttonDelete.addEventListener("click", deleteAllTodo);
+// function camelize(str) {
+//   let arr = str.split("-");
+//   let brrr =  arr.map(function(str){
+//     return str[0].toUpperCase() + str.slice(1)
     
- 
-  // let buttonDeleteToDo = buttons.querySelector("span.todo-trash"); 
-  // DeleteTodo(buttonDeleteToDo);  - не надо
+//   });
+//   let final = brrr.join("");
+// console.log(final);
+// };
 
-  function DeleteTodo(element) {
-    element.addEventListener("click", (event) => {
-        element.parentElement.remove();
-        // event.stopPropagation();
-    });
+// let seee = "list-style-image";
+// camelize(seee);
+
+function filterRange(arr, a, b) {
+let brr = arr.map(function(num, index, arr) {
+   if(num > a && num < b) {
+    
+    arr.push(num);
   }
-  function getStrike(element) {
-    element.addEventListener("click", (event) => {
-       element.setAttribute("style", "text-decoration:line-through;")
-        // event.stopPropagation();
-    });
-  }
-
  
-};
+});
+ console.log(brr);
+}
 
-
-
-
-
-
-
-window.onload = onPageLoaded;
+let array = [1,4,5,8,3,4,2];
+filterRange(array, 3, 6);
