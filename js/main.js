@@ -53,3 +53,73 @@
 // alert( sorted ); // CSS, HTML, JavaScript
 // alert( arr ); // HTML, JavaScript, CSS (без изменений)
 
+
+
+// function Calculator(){
+//   this.calculate = function (str) { 
+//     let a = str.split(" ");
+//     let c;
+//   if (a[1] == "+") {
+//      c = (+a[0] + +a[2]);
+//     } else {
+//        c = (+a[0] - +a[2]);
+//     }
+//     return c;
+//   }
+
+//   this.addMethod = function(name, func) {
+//     return this.name = this.func;
+//     }
+     
+  
+  
+// }
+
+// let calc = new Calculator;
+
+// alert( calc.calculate("3 - 7") ); // 10
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("2 ** 3");
+// alert( result ); // 8
+
+
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let users = [ vasya, petya, masha ];
+
+// let names = users.map(item => item.name);
+
+
+  
+ 
+
+// alert( names ); // Вася, Петя, Маша
+
+let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya = { name: "Петя", surname: "Иванов", id: 2 };
+let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+let users = [ vasya, petya, masha ];
+
+let usersMapped = users.forEach(item=> fullName = item.name + item.surname )
+
+/*
+usersMapped = [
+  { fullName: "Вася Пупкин", id: 1 },
+  { fullName: "Петя Иванов", id: 2 },
+  { fullName: "Маша Петрова", id: 3 }
+]
+*/
+console.log(usersMapped);
+// alert( usersMapped[0].id ) // 1
+// alert( usersMapped[0].fullName ) // Вася Пупкин
+
+
