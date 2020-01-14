@@ -103,23 +103,56 @@
 
 // alert( names ); // Вася, Петя, Маша
 
-let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
-let petya = { name: "Петя", surname: "Иванов", id: 2 };
-let masha = { name: "Маша", surname: "Петрова", id: 3 };
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
 
-let users = [ vasya, petya, masha ];
+// let users = [ vasya, petya, masha ];
 
-let usersMapped = users.forEach(item=> fullName = item.name + item.surname )
+// let usersMapped = users.forEach(item=> fullName = item.name + item.surname )
 
-/*
-usersMapped = [
-  { fullName: "Вася Пупкин", id: 1 },
-  { fullName: "Петя Иванов", id: 2 },
-  { fullName: "Маша Петрова", id: 3 }
-]
-*/
-console.log(usersMapped);
+// /*
+// usersMapped = [
+//   { fullName: "Вася Пупкин", id: 1 },
+//   { fullName: "Петя Иванов", id: 2 },
+//   { fullName: "Маша Петрова", id: 3 }
+// ]
+// */
+// console.log(usersMapped);
 // alert( usersMapped[0].id ) // 1
 // alert( usersMapped[0].fullName ) // Вася Пупкин
 
 
+
+// function sumSalaries(array) {
+//   let babki = Object.values(array);
+//   let sam = 0;
+//   for (let sum of babki) {
+//     sam = sum + sam; 
+//   }
+//   return sam;
+// }
+
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// };
+
+// alert( sumSalaries(salaries) ); // 650
+
+// function count(obj) {
+//    return (Object.keys(obj)).length;
+// }
+
+// let user = {
+//   name2: 'Jo3hn',
+//   name3: 'J2ohn',
+//   name4: 'Jo4hn',
+//   name5: 'J3ohn',
+//   name6: 'J5ohn',
+//   age: 30
+  
+// };
+
+// alert( count(user) ); // 2
