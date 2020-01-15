@@ -146,11 +146,7 @@
 // }
 
 // let user = {
-//   name2: 'Jo3hn',
-//   name3: 'J2ohn',
-//   name4: 'Jo4hn',
-//   name5: 'J3ohn',
-//   name6: 'J5ohn',
+
 //   age: 30
   
 // };
