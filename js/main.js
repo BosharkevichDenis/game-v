@@ -1,17 +1,3 @@
-// function camelize(str) {
-//   let arr = str.split("-");
-//   let brrr =  arr.map(function(str){
-//     return str[0].toUpperCase() + str.slice(1)
-    
-//   });
-//   let final = brrr.join("");
-// console.log(final);
-// };
-
-// let seee = "list-style-image";
-// camelize(seee);
-
-
 
 // function filterRange(arr, a, b) {
 // let brr = arr.filter(num => num > a && num < b) 
